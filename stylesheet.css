@@ -109,6 +109,12 @@ a:hover{text-decoration:none;color:#afcb00;}
     #mainmenu .container{padding-left:0;padding-right:0;}
     #mainmenu .navbar .nav li a{margin-left:20px;}
 }
+.fancyButton{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:#fff;background-color:#4CAF50;text-align:center;cursor:pointer;white-space:nowrap;}
+.fancyButton:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);}
+.fancyButton{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+.fancyButton:disabled{cursor:not-allowed;opacity:0.3;}
+:disabled *{pointer-events:none;}
+.fancyButton:disabled:hover{box-shadow:none;}
 html{background:url("https://convention.younggreens.org.uk/img/wallpaper.jpg") repeat scroll 0 0 transparent;}
 body{background:url("https://convention.younggreens.org.uk/img/backgroundGradient.png") repeat-x scroll 0 0 transparent;}
 :disabled *{pointer-events:none;}
