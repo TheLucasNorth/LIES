@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/thelucasnorth/lies/badge/master)](https://www.codefactor.io/repository/github/thelucasnorth/lies/overview/master) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
+
 Welcome to the LIES STV Voting System developed by Lucas North.
 
 The system is designed to support a theoretically unlimited number of candidates in a theoretically unlimited number of elections, in which a theoretically unlimited number of voters can participate. The actual limits are set by database capability ceilings.
