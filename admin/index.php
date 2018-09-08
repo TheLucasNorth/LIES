@@ -31,6 +31,26 @@ foreach ($elections as $key => $value) {
     echo "<a href='admin.php?election=$key'><h4>$value</h4></a>";
 }
 ?>
+<h3>Number of voters so far:</h3>
+<?php
+$fetchVoters = "SELECT * FROM users WHERE voted = 1";
+$fetchVotersQuery = mysqli_query($link, $fetchVoters);
+$numberVoters = $fetchVotersQuery->num_rows;
+$fetchElections = "SELECT * FROM elections";
+$fetchElectionsQuery = mysqli_query($link, $fetchElections);
+while ($election = mysqli_fetch_assoc($fetchElectionsQuery))
+    $elections[$election["id"]] = $election["table"];
+ksort($elections);
+unset($elections[0]);
+$numberVotes = 0;
+foreach ($elections as $key => $value) {
+    $voteCheck = "SELECT * FROM $value";
+    $voteCheckResult = $link->query($voteCheck);
+    $voters = $voteCheckResult->num_rows - 1;
+    $numberVotes = $numberVotes + $voters;
+}
+echo "$numberVoters people have voted, and have cast $numberVotes ballots."
+?>
 </body>
 <?php require '../after.php'; ?>
 </html>
