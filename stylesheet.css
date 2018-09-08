@@ -117,11 +117,11 @@ a:hover{text-decoration:none;color:#afcb00;}
 .fancyButton:disabled:hover{box-shadow:none;}
 
 html {
-    background: url("/img/wallpaper.jpg") repeat scroll 0 0 transparent;
+    background: url("img/wallpaper.jpg") repeat scroll 0 0 transparent;
 }
 
 body {
-    background: url("/img/backgroundGradient.png") repeat-x scroll 0 0 transparent;
+    background: url("img/backgroundGradient.png") repeat-x scroll 0 0 transparent;
 }
 :disabled *{pointer-events:none;}
 .fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
@@ -132,7 +132,7 @@ body {
 
 @font-face {
     font-family: 'Open Sans';
-    src: url("/fonts/OpenSans/fonts/Bold/OpenSans-Bold.woff2") format("woff2"), url("/fonts/OpenSans/fonts/Bold/OpenSans-Bold.woff") format("woff");
+    src: url("fonts/OpenSans/fonts/Bold/OpenSans-Bold.woff2") format("woff2"), url("fonts/OpenSans/fonts/Bold/OpenSans-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
