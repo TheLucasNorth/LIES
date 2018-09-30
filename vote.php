@@ -99,10 +99,15 @@ if (isset($_GET["election"])) {
                 unset($fields["table"]);
                 unset($fields["rolePlain"]);
                 unset($fields["voterID"]);
-                $columns = implode(", ", array_keys($fields));
-                $values = implode("', '", array_values($fields));
-
-                $sql = "REPLACE INTO $table ($columns, voterID) VALUES ('$values', '$voterhash');";
+                $tableSQL = htmlentities($table, ENT_QUOTES);
+                foreach ($fields as $key => $value) {
+                    $columnRAW[] = htmlspecialchars($key);
+                    $valueRAW[] = htmlspecialchars($value);
+                }
+                $columns = implode("`, `", $columnRAW);
+                $values = implode("', '", $valueRAW);
+                $sql = "REPLACE INTO `$tableSQL` (`$columns`, `voterID`) VALUES ('$values', '$voterhash');";
+                $voterID = mysqli_real_escape_string($link, $voterID);
                 $setVoted = " UPDATE `users` SET voted = 1 WHERE `voterID` = '$voterID';";
                 if ($conn->query($sql) === TRUE) {
                     $updateQuery = $link->query($setVoted);
