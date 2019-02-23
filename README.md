@@ -1,6 +1,8 @@
 # LIES
 [![CodeFactor](https://www.codefactor.io/repository/github/thelucasnorth/lies/badge/master)](https://www.codefactor.io/repository/github/thelucasnorth/lies/overview/master) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
+*Please note this branch is no longer being updated. Please see v2*
+
 Lucas' Ironically-named Election System. An open source STV election web-app for ballot collection and result calculation.
 
 Welcome to the LIES STV Voting System developed by Lucas North.
