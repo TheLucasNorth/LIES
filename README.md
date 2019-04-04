@@ -1,7 +1,7 @@
 # LIES
 [![CodeFactor](https://www.codefactor.io/repository/github/thelucasnorth/lies/badge/master)](https://www.codefactor.io/repository/github/thelucasnorth/lies/overview/master) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](http://perso.crans.org/besson/LICENSE.html)
 
-*Please note this branch is no longer being updated. It was built exceedingly quickly due to time constraints, and there are likely security vulnerabilities included. See [electrr](https://electrr.app) for an updated, maintained, and secured version. (NGB: electrr is a complete rebuild of LIES and, while they have similar functionality, they should not be considered to be different versions of the same product.)*
+*Please note this branch is no longer being updated. It was built exceedingly quickly due to time constraints, and there are likely security vulnerabilities included. See [electrr](https://electrr.app) for an updated, maintained, and secured version. (NB: electrr is a complete rebuild of LIES and, while they have similar functionality, they should not be considered to be different versions of the same product.)*
 
 Lucas' Ironically-named Election System. An open source STV election web-app for ballot collection and result calculation.
 
